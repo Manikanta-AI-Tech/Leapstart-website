@@ -50,6 +50,9 @@ export function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
+            <div className="px-3 py-1 rounded-full bg-accent/20 text-accent text-xs font-bold animate-pulse">
+              ADMISSIONS 2026 OPEN
+            </div>
             {["Why LeapStart", "Program", "Outcomes", "Journey"].map((item) => (
               <button
                 key={item}
