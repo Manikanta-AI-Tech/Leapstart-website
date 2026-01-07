@@ -32,8 +32,8 @@ export function BookingForm() {
     mutate(data, {
       onSuccess: () => {
         form.reset();
-        // Auto-open WhatsApp after successful submission
-        const message = `Hi, I’m interested in attending the LeapStart programme demo.%0APlease find my details below.%0A%0AName: ${data.studentName}%0APhone: ${data.phoneNumber}%0AClass: ${data.studentClass}%0ACity: ${data.city}`;
+        // Auto-open WhatsApp after successful submission (Telugu version)
+        const message = `నమస్కారం LeapStart టీమ్,%0A%0Aనేను LeapStart ప్రోగ్రామ్ డెమోలో పాల్గొనడానికి ఆసక్తి చూపుతున్నాను.%0Aదయచేసి నా వివరాలను క్రింద చూడండి.%0A%0Aపేరు: ${data.studentName}%0Aఫోన్: ${data.phoneNumber}%0Aతరగతి: ${data.studentClass}%0Aనగరం: ${data.city}`;
         window.open(`https://wa.me/918328409387?text=${message}`, "_blank");
       },
     });
