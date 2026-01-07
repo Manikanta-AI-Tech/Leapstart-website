@@ -34,7 +34,7 @@ export function BookingForm() {
         form.reset();
         // Auto-open WhatsApp after successful submission
         const message = `Hello LeapStart Team,%0A%0AI have submitted the demo form.%0AName: ${data.studentName}%0APhone: ${data.phoneNumber}%0AClass: ${data.studentClass}%0ACity: ${data.city}`;
-        window.open(`https://wa.me/91YOURNUMBERHERE?text=${message}`, "_blank");
+        window.open(`https://wa.me/918328409387?text=${message}`, "_blank");
       },
     });
   }
@@ -158,7 +158,7 @@ export function BookingForm() {
               onClick={() => {
                 const data = form.getValues();
                 const message = `Hello LeapStart Team,%0A%0AI am interested in the 4-Year Engineering Program.%0AName: ${data.studentName || "Interested Student"}%0APhone: ${data.phoneNumber || "N/A"}%0ACity: ${data.city || "N/A"}`;
-                window.open(`https://wa.me/91YOURNUMBERHERE?text=${message}`, "_blank");
+                window.open(`https://wa.me/918328409387?text=${message}`, "_blank");
               }}
               className="mt-3 w-full py-3 rounded-xl border border-slate-200 text-slate-600 font-medium hover:bg-slate-50 hover:text-slate-900 transition-colors flex items-center justify-center gap-2"
             >
