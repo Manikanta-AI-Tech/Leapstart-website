@@ -1,0 +1,257 @@
+🚀 REACT + TAILWIND WEBSITE PROMPT (LEAPSTART)
+
+Prompt:
+
+Build a modern, responsive educational website for an institute named LeapStart School of Technology using:
+
+React (functional components)
+
+Tailwind CSS
+
+Clean component-based architecture
+
+Mobile-first design
+
+Professional startup / EdTech look
+
+🎯 Target Audience
+
+Intermediate (+2) students
+
+Parents focused on long-term career security
+
+Students aiming for CSE, AI, ML, Data Science careers
+
+🎨 Design Guidelines
+
+Tech-focused color palette (dark blue, indigo, white, slate)
+
+Large bold headings, clean typography
+
+Icons for sections (Heroicons or Lucide)
+
+Smooth scrolling
+
+Card-based layouts
+
+CTA-focused design
+
+Fully responsive (mobile, tablet, desktop)
+
+🧩 WEBSITE STRUCTURE (COMPONENTS)
+1. Navbar
+
+Logo: LeapStart School of Technology
+
+Links: Why LeapStart | Program | Learning Journey | Outcomes | Demo
+
+Sticky navbar
+
+2. Hero Section
+
+Headline:
+
+Engineering That Makes You Job-Ready — Not Jobless
+
+Subheading:
+A 4-year on-campus engineering program designed to make students industry-ready from Day One.
+
+CTAs:
+
+Book a Program Demo
+
+Talk to a Career Advisor
+
+3. Engineering Problem Section
+
+Title:
+Why Most Engineering Graduates Struggle After 4 Years
+
+Content Cards:
+
+75% of graduates are not job-ready
+
+Outdated exam-focused curriculum
+
+No real-world projects
+
+Forced coaching after graduation
+
+Highlight Line:
+
+Engineering should prepare students for careers — not confusion.
+
+4. Why LeapStart Exists
+
+Title:
+LeapStart Was Built to Fix This Problem
+
+Content:
+LeapStart bridges the gap between traditional engineering education and real industry requirements — during engineering, not after graduation.
+
+5. Vision & Mission
+
+Vision: Create engineers who can think, build, and contribute from Day One
+
+Mission: Combine strong academics with real-world engineering experience to unlock high-paying tech careers
+
+6. How LeapStart Is Different
+
+Bullet / Card Layout:
+
+50+ real-world projects
+
+Internship-style learning from Year 1
+
+Mentorship from real software engineers & founders
+
+Paid internships up to ₹50,000/month
+
+GitHub-based teamwork, code reviews, deadlines
+
+Career pathways up to ₹24 LPA
+
+7. Program Overview
+
+Title:
+The 4-Year Program at a Glance
+
+Stats / Cards:
+
+4 Years
+
+8 Semesters
+
+50+ Projects
+
+Degree Info:
+🎓 IIT Jodhpur – B.S Degree
+Specialisation: Artificial Intelligence & Data Science
+
+8. Year-wise Learning Journey (Timeline Component)
+
+Year 1: Programming, logic, problem solving
+
+Year 2: Frontend, backend, databases, APIs
+
+Year 3: Cloud, DevOps, system design
+
+Year 4: AI, ML, Data Science, Capstone project
+
+9. What Students Actually Do
+
+Title:
+This Is Not a Classroom Experience
+
+Points:
+
+Build 50+ real applications
+
+Work in teams using GitHub & modern tools
+
+Regular feedback & code reviews
+
+Portfolio-based learning
+
+10. Outcomes / Graduation
+
+Title:
+What You Graduate With
+
+Cards:
+
+1000+ hours of hands-on coding
+
+Job-ready technical skills
+
+Interview confidence
+
+Clear career direction (AI, Full-Stack, Cloud, Data)
+
+Experience equivalent to 2–3 years in industry
+
+11. Parent Reassurance Section
+
+Title:
+This Is Not a Backup Option. This Is a Smart Choice.
+
+Content:
+
+IIT rank doesn’t define success
+
+Growth over the next 4 years matters
+
+Skills, mindset, and exposure create careers
+
+12. Call to Action
+
+Title:
+Start Without Pressure
+
+Steps:
+
+Attend a program demo
+
+Understand your learning path
+
+Decide with clarity — not fear
+
+Form Fields:
+
+Student Name
+
+Phone Number
+
+Class
+
+City
+
+Buttons:
+
+Book Free Demo
+
+WhatsApp Chat
+
+13. Footer
+
+About LeapStart
+
+Programs
+
+Admissions
+
+Contact
+
+Privacy Policy
+
+⚙️ TECHNICAL REQUIREMENTS
+
+Use reusable React components
+
+Tailwind utility classes (no custom CSS unless needed)
+
+Smooth scroll navigation
+
+Form validation (basic)
+
+Clean, readable code
+
+Ready to run in Replit
+
+🎯 FINAL GOAL
+
+The website should:
+
+Educate parents
+
+Inspire students
+
+Build trust
+
+Convert visitors into demo bookings
+
+🔥 Pro Tip
+
+After generation, ask Replit AI:
+
+“Improve UI polish, spacing, animations, and mobile responsiveness.”
