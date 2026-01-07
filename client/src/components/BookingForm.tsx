@@ -33,7 +33,7 @@ export function BookingForm() {
       onSuccess: () => {
         form.reset();
         // Auto-open WhatsApp after successful submission
-        const message = `Hello LeapStart Team,%0A%0AI have submitted the demo form.%0AName: ${data.studentName}%0APhone: ${data.phoneNumber}%0AClass: ${data.studentClass}%0ACity: ${data.city}`;
+        const message = `Hi, I’m interested in attending the LeapStart programme demo.%0APlease find my details below.%0A%0AName: ${data.studentName}%0APhone: ${data.phoneNumber}%0AClass: ${data.studentClass}%0ACity: ${data.city}`;
         window.open(`https://wa.me/918328409387?text=${message}`, "_blank");
       },
     });
