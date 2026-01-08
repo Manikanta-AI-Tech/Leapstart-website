@@ -162,11 +162,12 @@ export default function Home() {
       <section className="bg-white text-slate-900 py-24 light-theme">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeIn} className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-blue-600 font-semibold mb-2">Our Purpose</h2>
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              We create real world problem solvers and technology disruptors.
+              LeapStart Was Built to Fix This Problem
             </h2>
             <p className="text-xl text-slate-600">
-              Engineering education is broken. It focuses on passing exams, not building careers.
+              We bridge the massive gap between traditional engineering education and real industry requirements. We don't just teach computer science; we create real world problem solvers and technology disruptors.
             </p>
           </motion.div>
 
