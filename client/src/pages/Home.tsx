@@ -231,7 +231,7 @@ export default function Home() {
               LeapStart Was Built to <br/><span className="text-gradient-primary">Fix This Problem</span>
             </h2>
             <p className="text-lg text-slate-400 mb-6 leading-relaxed">
-              We bridge the massive gap between traditional engineering education and real industry requirements. We don't just teach computer science; we create software engineers.
+              We bridge the massive gap between traditional engineering education and real industry requirements. We don't just teach computer science; we create real world problem solvers and technology disruptors.
             </p>
             
             <div className="space-y-6">
