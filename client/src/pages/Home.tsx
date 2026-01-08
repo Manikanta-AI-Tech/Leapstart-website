@@ -77,15 +77,12 @@ export default function Home() {
             </div>
             
             <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.1]">
-              Engineering That Makes You <br/>
+              Experiential Learning that makes you <br/>
               <span className="text-gradient-primary">Job-Ready</span>
-              <span className="text-slate-500 text-3xl md:text-5xl block mt-2 font-medium">
-                Not Jobless.
-              </span>
             </h1>
 
             <p className="text-xl text-slate-400 max-w-xl leading-relaxed">
-              A 4-year on-campus engineering program designed to make students industry-ready from Day One. No outdated theory—just real engineering.
+              A 4-year on campus experiential program designed to make students industry-ready from Day One. No outdated theory—just real engineering.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -166,7 +163,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeIn} className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              Why Most Engineering Graduates <br/>Struggle After 4 Years
+              We create real world problem solvers and technology disruptors.
             </h2>
             <p className="text-xl text-slate-600">
               Engineering education is broken. It focuses on passing exams, not building careers.
@@ -388,7 +385,7 @@ export default function Home() {
             </div>
             <div className="bg-slate-800 p-6 rounded-2xl border border-white/5 text-slate-300">
               <h3 className="text-2xl font-bold text-white mb-2">IIT Degree</h3>
-              <p>B.S. Degree in Data Science & Applications from IIT Madras / Jodhpur (Optional dual degree).</p>
+              <p>B.S. Degree in Data Science & Applications from IIT Jodhpur (Remote learning).</p>
             </div>
             <div className="bg-slate-800 p-6 rounded-2xl border border-white/5 text-slate-300 transform lg:translate-y-12">
               <h3 className="text-2xl font-bold text-white mb-2">Confidence</h3>
