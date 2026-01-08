@@ -77,7 +77,7 @@ export default function Home() {
             </div>
             
             <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.1]">
-              Engineering That Makes You <br/>
+              Experiential learning that makes you <br/>
               <span className="text-gradient-primary">Job-Ready</span>
               <span className="text-slate-500 text-3xl md:text-5xl block mt-2 font-medium">
                 Not Jobless.
@@ -85,7 +85,7 @@ export default function Home() {
             </h1>
 
             <p className="text-xl text-slate-400 max-w-xl leading-relaxed">
-              A 4-year on-campus engineering program designed to make students industry-ready from Day One. No outdated theory—just real engineering.
+              A 4-Year on-campus experiential program designed to make students industry-ready from Day One. No outdated theory—just real engineering.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -233,7 +233,7 @@ export default function Home() {
               LeapStart Was Built to <br/><span className="text-gradient-primary">Fix This Problem</span>
             </h2>
             <p className="text-lg text-slate-400 mb-6 leading-relaxed">
-              We bridge the massive gap between traditional engineering education and real industry requirements. We don't just teach computer science; we create software engineers.
+              We bridge the massive gap between traditional engineering education and real industry requirements. We don't just teach computer science; we create real world problem solvers and technology disruptors.
             </p>
             
             <div className="space-y-6">
