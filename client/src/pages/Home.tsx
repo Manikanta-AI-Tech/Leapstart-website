@@ -1,7 +1,5 @@
 import { Navbar } from "@/components/Navbar";
 import { BookingForm } from "@/components/BookingForm";
-import campusExt from "@assets/stock_images/modern_high-tech_col_9c415eb4.jpg";
-import campusInt from "@assets/stock_images/modern_student_innov_dd226f75.jpg";
 import { 
   ArrowRight, 
   Terminal, 
@@ -114,34 +112,47 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="hidden lg:block relative"
           >
-            {/* Campus Image Display */}
-            <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-              <div className="relative flex gap-4">
-                <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
-                  <img 
-                    src={campusExt} 
-                    alt="LeapStart Campus Exterior" 
-                    className="w-full h-auto object-cover max-h-[400px]"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                    <span className="text-white text-xs font-medium tracking-wider uppercase">Our Modern Campus</span>
+            {/* Visual representation of code/tech */}
+            <div className="relative z-10 bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
+              <div className="flex items-center gap-2 mb-4 border-b border-slate-800 pb-4">
+                <div className="w-3 h-3 rounded-full bg-red-500"/>
+                <div className="w-3 h-3 rounded-full bg-yellow-500"/>
+                <div className="w-3 h-3 rounded-full bg-green-500"/>
+                <div className="ml-auto text-xs text-slate-500 font-mono">student_project.tsx</div>
+              </div>
+              <div className="space-y-3 font-mono text-sm">
+                <div className="flex gap-4">
+                  <span className="text-slate-600">1</span>
+                  <span className="text-purple-400">import</span> <span className="text-white">Future</span> <span className="text-purple-400">from</span> <span className="text-green-400">'@leapstart/engineers'</span>;
+                </div>
+                <div className="flex gap-4">
+                  <span className="text-slate-600">2</span>
+                  <span className="text-blue-400">const</span> <span className="text-yellow-300">Student</span> = () ={">"} {"{"}
+                </div>
+                <div className="flex gap-4">
+                  <span className="text-slate-600">3</span>
+                  <div className="pl-4">
+                    <span className="text-blue-400">return</span> (
                   </div>
                 </div>
-                <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl mt-12">
-                  <img 
-                    src={campusInt} 
-                    alt="Innovation Lab" 
-                    className="w-full h-auto object-cover max-h-[400px]"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                    <span className="text-white text-xs font-medium tracking-wider uppercase">Innovation Lab</span>
+                <div className="flex gap-4">
+                  <span className="text-slate-600">4</span>
+                  <div className="pl-8 text-white">
+                    {"<"}JobReady <span className="text-purple-400">skills</span>={"{"}['AI', 'DevOps']{"}"} /{">"}
                   </div>
+                </div>
+                <div className="flex gap-4">
+                  <span className="text-slate-600">5</span>
+                  <div className="pl-4 text-white">);</div>
+                </div>
+                <div className="flex gap-4">
+                  <span className="text-slate-600">6</span>
+                  <span className="text-white">{"}"};</span>
                 </div>
               </div>
 
               {/* Stats Overlay */}
-              <div className="absolute -bottom-6 -left-6 bg-white text-slate-900 p-6 rounded-2xl shadow-xl flex flex-col gap-1 z-20">
+              <div className="absolute -bottom-10 -right-10 bg-white text-slate-900 p-6 rounded-2xl shadow-xl flex flex-col gap-1 max-w-[200px]">
                 <span className="text-4xl font-bold text-primary">₹50k</span>
                 <span className="text-sm font-medium leading-tight text-slate-600">Average internship stipend by Year 3</span>
               </div>
