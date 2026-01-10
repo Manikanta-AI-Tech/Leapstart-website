@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { BookingForm } from "@/components/BookingForm";
+import { useLocation } from "wouter";
 import { 
   ArrowRight, 
   Terminal, 
@@ -47,6 +48,8 @@ const staggerContainer = {
 };
 
 export default function Home() {
+  const [, setLocation] = useLocation();
+  
   const scrollToBooking = () => {
     document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -99,9 +102,10 @@ export default function Home() {
               <Button 
                 variant="outline" 
                 size="lg"
+                onClick={() => setLocation("/test-details")}
                 className="text-lg px-8 py-6 rounded-xl border-white/10 text-white hover:bg-white/5 backdrop-blur-sm"
               >
-                Talk to Career Advisor
+                Take a Test
               </Button>
             </div>
           </motion.div>

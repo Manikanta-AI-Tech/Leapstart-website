@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { insertBookingSchema, bookings } from './schema';
+import { insertBookingSchema, bookings, insertTestDetailsSchema, testDetails, insertUserSchema, users } from './schema';
 
 export const errorSchemas = {
   validation: z.object({
@@ -20,6 +20,47 @@ export const api = {
       responses: {
         201: z.custom<typeof bookings.$inferSelect>(),
         400: errorSchemas.validation,
+      },
+    },
+  },
+  users: {
+    checkAndCreate: {
+      method: 'POST' as const,
+      path: '/api/users/check-email',
+      input: insertUserSchema,
+      responses: {
+        201: z.custom<typeof users.$inferSelect>(),
+        400: errorSchemas.validation,
+        409: z.object({
+          message: z.string(),
+          email: z.string(),
+        }),
+      },
+    },
+  },
+  testDetails: {
+    create: {
+      method: 'POST' as const,
+      path: '/api/test-details',
+      input: insertTestDetailsSchema.extend({
+        userId: z.number(),
+        answers: z.any().optional(),
+        score: z.string().optional(),
+      }),
+      responses: {
+        201: z.custom<typeof testDetails.$inferSelect>(),
+        400: errorSchemas.validation,
+        404: z.object({
+          message: z.string(),
+        }),
+      },
+    },
+    list: {
+      method: 'GET' as const,
+      path: '/api/test-details',
+      input: z.void(),
+      responses: {
+        200: z.array(z.any()), // Will include joined user data
       },
     },
   },
