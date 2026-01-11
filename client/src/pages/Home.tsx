@@ -58,7 +58,7 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <Navbar />
 
-      {/* HERO SECTION */}
+      {/* HERO SECTION - COMPLETE & IMPROVED */}
       <section id="hero" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
         {/* Abstract Background Shapes */}
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3" />
@@ -69,47 +69,61 @@ export default function Home() {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-8"
+            className="space-y-6 md:space-y-8"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-primary-foreground/80 text-sm font-medium">
+            {/* Badge - Enhanced */}
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm text-white/90 text-sm font-medium hover:bg-white/10 transition-colors"
+            >
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
               </span>
               Admissions Open for 2026 Batch
-            </div>
+            </motion.div>
             
-            <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.1]">
-              Experiential learning that makes you <br/>
-              <span className="text-gradient-primary">Job-Ready</span>
-              <span className="text-slate-500 text-3xl md:text-5xl block mt-2 font-medium">
+            {/* Heading - Improved hierarchy */}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.15] tracking-tight">
+              Experiential learning that<br className="hidden sm:block"/> makes you{" "}
+              <span className="text-gradient-primary inline-block">Job-Ready</span>
+              <span className="text-slate-400 text-2xl sm:text-3xl md:text-4xl lg:text-5xl block mt-3 md:mt-4 font-semibold">
                 Not Jobless.
               </span>
             </h1>
 
-            <p className="text-xl text-slate-400 max-w-xl leading-relaxed">
+            {/* Description - Better contrast */}
+            <p className="text-lg md:text-xl text-slate-300 max-w-2xl leading-relaxed pt-2">
               A 4-Year on-campus experiential program designed to make students industry-ready from Day One. No outdated theory—just real engineering.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            {/* CTAs - Enhanced visual hierarchy */}
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 md:pt-4">
               <Button 
                 size="lg" 
                 onClick={scrollToBooking}
-                className="text-lg px-8 py-6 rounded-xl bg-primary hover:bg-primary/90 text-white shadow-xl shadow-primary/20 hover:shadow-primary/30 transition-all hover:-translate-y-1"
+                className="group relative text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 rounded-xl bg-primary hover:bg-primary/90 text-white shadow-2xl shadow-primary/25 hover:shadow-primary/40 transition-all duration-300 hover:-translate-y-0.5 font-semibold overflow-hidden"
               >
-                Book a Program Demo
+                <span className="relative z-10 flex items-center justify-center gap-2">
+                  Book a Program Demo
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-primary to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
                 onClick={() => setLocation("/test-details")}
-                className="text-lg px-8 py-6 rounded-xl border-white/10 text-white hover:bg-white/5 backdrop-blur-sm"
+                className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 rounded-xl border-2 border-white/20 text-white hover:bg-white/10 hover:border-white/30 backdrop-blur-sm transition-all duration-300 font-medium"
               >
                 Take a Test
               </Button>
             </div>
           </motion.div>
 
+          {/* Code Block Visual - RIGHT SIDE - FULLY INTACT */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}

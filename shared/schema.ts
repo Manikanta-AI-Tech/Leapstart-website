@@ -12,10 +12,27 @@ export const bookings = pgTable("bookings", {
   createdAt: timestamp("created_at").defaultNow(),
 });
 
-export const insertBookingSchema = createInsertSchema(bookings).omit({
-  id: true,
-  createdAt: true,
-});
+export const insertBookingSchema = createInsertSchema(bookings)
+  .omit({
+    id: true,
+    createdAt: true,
+  })
+  .extend({
+    studentName: z.string().min(2, "Student name must be at least 2 characters").trim(),
+    phoneNumber: z
+      .string()
+      .min(1, "Phone number is required")
+      .refine(
+        (val) => {
+          const cleaned = val.replace(/[\s-]/g, "").replace(/^\+91/, "");
+          return /^[6-9]\d{9}$/.test(cleaned);
+        },
+        { message: "Please enter a valid 10-digit mobile number starting with 6-9" }
+      )
+      .transform((val) => val.replace(/[\s-]/g, "").replace(/^\+91/, "")),
+    studentClass: z.string().min(1, "Class is required").trim(),
+    city: z.string().min(2, "City must be at least 2 characters").trim(),
+  });
 
 export type InsertBooking = z.infer<typeof insertBookingSchema>;
 export type Booking = typeof bookings.$inferSelect;

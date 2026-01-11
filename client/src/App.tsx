@@ -7,6 +7,7 @@ import Home from "@/pages/Home";
 import TestDetailsForm from "@/pages/TestDetailsForm";
 import TestPage from "@/pages/TestPage";
 import AdminTestDetails from "@/pages/AdminTestDetails";
+import AdminBookings from "@/pages/AdminBookings";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -16,6 +17,7 @@ function Router() {
       <Route path="/test-details" component={TestDetailsForm} />
       <Route path="/test" component={TestPage} />
       <Route path="/admin/test-details" component={AdminTestDetails} />
+      <Route path="/admin/bookings" component={AdminBookings} />
       <Route component={NotFound} />
     </Switch>
   );

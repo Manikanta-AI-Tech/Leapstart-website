@@ -14,6 +14,7 @@ import {
 
 export interface IStorage {
   createBooking(booking: InsertBooking): Promise<Booking>;
+  getAllBookings(): Promise<Booking[]>;
   checkEmailExists(email: string): Promise<boolean>;
   createUser(user: InsertUser): Promise<User>;
   getUserByEmail(email: string): Promise<User | null>;
@@ -29,6 +30,13 @@ export class DatabaseStorage implements IStorage {
       .values(insertBooking)
       .returning();
     return booking;
+  }
+
+  async getAllBookings(): Promise<Booking[]> {
+    return await db
+      .select()
+      .from(bookings)
+      .orderBy(desc(bookings.createdAt));
   }
 
   async checkEmailExists(email: string): Promise<boolean> {

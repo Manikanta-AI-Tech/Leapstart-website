@@ -27,6 +27,18 @@ export async function registerRoutes(
     }
   });
 
+  app.get(api.bookings.list.path, async (req, res) => {
+    try {
+      const bookings = await storage.getAllBookings();
+      res.status(200).json(bookings);
+    } catch (err) {
+      console.error("Error fetching bookings:", err);
+      return res.status(500).json({
+        message: err instanceof Error ? err.message : "Failed to fetch bookings",
+      });
+    }
+  });
+
   // Check email and create user endpoint
   app.post(api.users.checkAndCreate.path, async (req, res) => {
     try {

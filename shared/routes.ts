@@ -22,6 +22,14 @@ export const api = {
         400: errorSchemas.validation,
       },
     },
+    list: {
+      method: 'GET' as const,
+      path: '/api/bookings',
+      input: z.void(),
+      responses: {
+        200: z.array(z.custom<typeof bookings.$inferSelect>()),
+      },
+    },
   },
   users: {
     checkAndCreate: {
